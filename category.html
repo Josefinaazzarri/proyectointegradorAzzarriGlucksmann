@@ -3,21 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
 <body>
     <header>
-         <div> 
-            <a href="./index.html"><img src="./img/IMG_A76AB4CBEBC2-1.JPEG" alt="logo"></a>
-            <a href="./index.html"> HOME</a>
-            <a href="./login.html"> LOGIN</a>
-            <a href="./register.html">REGISTER</a>
-            <form action="./search-result.html" method="get">
-            <input type="text" name="buscador" value=" ">
-            </form>
-        </div>
-        <div>
-             <ul>
+        <section class="sectionheader">
+          <nav class="fotoheader">
+            <a href="./index.html" class="fotologo"> <img src="./img/IMG_A76AB4CBEBC2-1.JPEG" alt="logo"></a>
+          </nav>
+          <nav> 
+             <ul class="listanavegador"> 
+               <li class="elementosheader"><a href="./index.html" > HOME</a></li>
+               <li class="elementosheader"><a href="./login.html"> LOGIN</a></li>
+               <li class="elementosheader"><a href="./register.html">REGISTER</a></li>
+               <li class="elementosheader">
+                 <form action="./search-result.html" method="get">
+                    <input type="text" name="buscador" value=" ">
+                  </form>
+               </li>
+             </ul>
+          </nav>
+        </section>
+        <section>
+            <nav class="cajacostado">
+                <ul class="licajacostado">
                     <li><a href="./category.html">beauty</a></li>
                     <li><a href="./category.html">fragrances</a></li>
                     <li><a href="./category.html">furniture</a></li>
@@ -42,8 +52,9 @@
                     <li><a href="./category.html">womens dresses</a></li>
                     <li><a href="./category.html">womens jewellery</a></li>
                     <li><a href="./category.html">womens shoes</a></li><li><a href="./category.html">womens watches</a></li>
-           </ul>
-        </div>
+                </ul>
+            </nav>
+        </section>
     </header>
     <main>
         <h1>ANILLOS</h1>
