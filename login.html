@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jost:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <section class="sectionheader">
-          <nav class="fotoheader">
+        <nav class="fotoheader">
             <a href="./index.html" class="fotologo"> <img src="./img/IMG_A76AB4CBEBC2-1.JPEG" alt="logo"></a>
           </nav>
           <nav> 
@@ -25,8 +30,11 @@
              </ul>
           </nav>
         </section>
-        <section>
-            <nav class="cajacostado">
+    </header>
+    <main>
+        <aside class="cajacostadosec">
+            <h2 class="titulocaja">category</h2>
+            <nav>
                 <ul class="licajacostado">
                     <li><a href="./category.html">beauty</a></li>
                     <li><a href="./category.html">fragrances</a></li>
@@ -54,23 +62,22 @@
                     <li><a href="./category.html">womens shoes</a></li><li><a href="./category.html">womens watches</a></li>
                 </ul>
             </nav>
-        </section>
-    </header>
-    <main>
-        <form action="./index.html" method="get">
-            <div>
+         </aside>
+        
+        <form action="./index.html" method="get" class="formulariologin">
+            <div class="pregunta">
                 <label for="email">Email:</label>
                 <input id="email" type="email" name="email" value="">
             </div>
-            <div>
+            <div class="pregunta">
                 <label for="contraseña">Contraseña:</label>
                 <input id="contraseña" type="password" name="contraseña" value="">
             </div>
-             <div>
-                <button type="button">INGRESAR</button>
+             <div class="pregunta">
+                <button type="button" class="but">INGRESAR</button>
             </div>
-            <div>
-                <a href="./register.html">No tengo cuenta</a>
+            <div class="pregunta">
+                <button type="button"><a href="./register.html" class="but">No tengo cuenta</a></button>
             </div>
         </form>
     </main>
