@@ -176,10 +176,6 @@ flex-direction: row;
     flex-direction: row;
 }
 
-
-
-
-
 .formulariologin{
     display: flex;
     flex-direction: column;
@@ -190,6 +186,7 @@ flex-direction: row;
     padding: 20px;
     margin-left: 300px;
     background-color: rgba(240, 255, 255, 0.773);
+    text-align: center;
 }
 
 .pregunta{
@@ -207,9 +204,6 @@ flex-direction: row;
   font-style: normal;
   font-size: 20px;
 }
-
-
-
 
 .productosolo{
     justify-content: center;
@@ -239,5 +233,26 @@ flex-direction: row;
     height: 1030px;
 }
 
+
+.formularioreg{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-self: center;
+    padding: 20px;
+    margin-left: 250px;
+    background-color: rgba(240, 255, 255, 0.773);
+}
+.preguntareg{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 600px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
 
 
