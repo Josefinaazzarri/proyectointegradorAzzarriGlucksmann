@@ -64,7 +64,6 @@ body{
 .licajacostado li{
     margin-top: 20px;
     margin-bottom: 30px;
-    font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -100,6 +99,7 @@ main{
     margin: 6px;
     padding: 10px;
     height: 600px;
+    text-align: center;
 }
 
 .articlesection img{
@@ -147,6 +147,7 @@ p{
     border-radius: 10px;
     margin: 6px;
     height: auto;
+    text-align: center;
 }
 
 .articlesectioncat img{
@@ -175,6 +176,9 @@ flex-direction: row;
     justify-content: center;
     flex-direction: row;
 }
+
+
+
 
 .formulariologin{
     display: flex;
@@ -234,6 +238,8 @@ flex-direction: row;
 }
 
 
+
+
 .formularioreg{
     display: flex;
     flex-direction: row;
@@ -256,3 +262,15 @@ flex-direction: row;
 }
 
 
+
+.fot{
+    display: flex;         
+    align-items: center;  
+    justify-content: center; 
+    padding: 10px 20px;
+    background-color: beige;
+    border: 2px solid black;
+    flex-wrap: wrap;
+    font-weight: bold;
+    margin-top: 5px;
+}
