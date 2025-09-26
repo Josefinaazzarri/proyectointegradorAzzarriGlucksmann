@@ -366,7 +366,6 @@ p{
 }
 
 
-
 @media (max-width: 420px){
     header{
         padding: 3px 6px;
@@ -441,5 +440,4 @@ p{
     .aleatorios, .masvendidos, .listanavegador {
         width: unset;
     }
-
 }
