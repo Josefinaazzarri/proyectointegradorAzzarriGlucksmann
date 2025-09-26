@@ -369,23 +369,18 @@ p{
 
 @media (max-width: 420px){
     header{
-        width: 155vw;
         padding: 3px 6px;
     }
 
     .fotologo img{
-        width: auto;
         height: 100px;
     }
-    .listanavegador{
-        width: 140vw;
-    }
-    .fot{ 
-        width: 155vw;   
+    .listanavegador li{
+        margin-right: 5px;
+        margin-left: 5px;
     }
     .cajacostadosec{
-        width: 400px;
-        margin-right: 40px;
+     width: 100%;
     }
     .header2{
        margin-bottom: 0px;
@@ -401,23 +396,12 @@ p{
         margin-right: 10px;
     }
     .articlesearch{
-        width: 330px;
         justify-content: center;
     }
-
-    .dicaja1{
-        width: 340px;
+    main{
+        flex-direction: column;
     }
 
-    .productosolo{
-        width: 500px;
-    }
-    .product{
-            height: 660px;
-    }
-    .comentarios{
-        height: 980px;
-    }
     .coment{
         margin-top: 5px;
         margin-bottom: 5px;
@@ -430,10 +414,10 @@ p{
     }
      .formularioreg{
       margin-left: 30px;
+      padding: 5px;
 
     }
     .preguntareg{
-        width: 200px;
         margin-bottom: 100px;
         margin-top: 100px;
     }
@@ -443,7 +427,6 @@ p{
     }
 
     .pregunta{
-         width: 200px;
         margin-bottom: 80px;
         margin-top: 80px;
     }
@@ -451,13 +434,9 @@ p{
     .titulocate{
         font-size: 20px;
     }
-    .articlesection{
-        width: 160px;
-        height: 450px;
-    }
 
-    .cat{
-        width: 250px;
+    .aleatorios, .masvendidos, .listanavegador {
+        width: unset;
     }
 
 }
