@@ -14,11 +14,11 @@ fetch(url)
         productosRellenar += `<h2 class="header2"> SMARTPHONES</h2>`
         for (let i = 0; i < productos.length; i++) {
             productosRellenar += `<article class="articlesection">
-               <a href="./product.html"> <img src= ${productos[i].thumbnail} alt=" aleatoriofotouno"></a>
+               <a href="./product.html?id=${productos[i].id}"> <img src= ${productos[i].thumbnail} alt=" aleatoriofotouno"></a>
                 <h4>${productos[i].title}</h4>
                 <p>${productos[i].description}</p>
-                <p>${productos[i].price}</p>
-                <a href="./product.html" class="but">VER DETALLE</a>
+                <p>$${productos[i].price}</p>
+                <a href="./product.html?id=${productos[i].id}" class="but">VER DETALLE</a>
             </article>`
         }
 
@@ -46,11 +46,11 @@ fetch(urldos)
         productosRellenardos += `<h2 class="header2"> SUNGLASSES</h2>`
         for (let i = 0; i < productosdos.length; i++) {
             productosRellenardos += `<article class="articlesection">
-                 <a href="./product.html"><img src=${productosdos[i].thumbnail} alt="vendidosuno"></a>
+                 <a href="./product.html?id=${productosdos[i].id}"><img src=${productosdos[i].thumbnail} alt="vendidosuno"></a>
                 <h4>${productosdos[i].title}</h4>
                 <p>${productosdos[i].description}</p>
-                <p>${productosdos[i].price}</p>
-                <a href="./product.html" class="but">VER DETALLE</a>
+                <p>$${productosdos[i].price}</p>
+                <a href="./product.html?id=${productosdos[i].id}" class="but">VER DETALLE</a>
             </article>`
         }
 
