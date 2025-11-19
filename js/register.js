@@ -1,4 +1,4 @@
-let form = document.querySelector(".formularioreg form")
+let form = document.querySelector(".formularioreg")
 let email = document.querySelector("#mail")
 let contraseña = document.querySelector("#contra")
 let repetir = document.querySelector("#contras")
@@ -12,7 +12,7 @@ form.addEventListener("submit", function(evento){
         alert("La contraseña es obligatoria")
         evento.preventDefault();
     }else if (contraseña.value.length < 6) {
-        alert("la contraseña debe tener mas de 6 digitos")
+        alert("La contraseña debe tener más de 6 digitos")
         evento.preventDefault();
     }else if (contraseña.value !== repetir.value) {
         alert("Las contraseñas no coinciden")
