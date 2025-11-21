@@ -21,7 +21,7 @@ fetch(urlproducto)
         let producto_solo = data;
         let tagsTexto = ""
         
-        informacion_producto += `<section class="productosolo product">
+        informacion_producto += `
                 <img src=${producto_solo.thumbnail} alt="aleatoriofotosiete">
                 <h3>${producto_solo.title}</h3>
                 <p class="pprod">Marca: ${producto_solo.brand}</p>
@@ -29,11 +29,14 @@ fetch(urlproducto)
                 <p class="pprod">Precio: $${producto_solo.price}</p>
                 <p class="pprod">Categoría: ${producto_solo.category}</p>
                 <p class="pprod">Stock: ${producto_solo.stock}</p>
-                <ul>
-                    <li class="pprod">${producto_solo.tags[0]}
-                    <li class="pprod">${producto_solo.tags[1]}</li>
-                <ul>
-        </section>`
+                `
+        let tag = ''
+        for (let i = 0; i < producto_solo.tags.length && i < 3; i++) {
+           tag +=`<li class="pprod">${producto_solo.tags[i]}`
+            
+        }   
+        informacion_producto += tag
+
 
         productosolo.innerHTML = informacion_producto;
 

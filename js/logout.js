@@ -1,7 +1,7 @@
 let saludo2 = document.querySelector(".saludo");          
 let login2 = document.querySelector(".login_b");    
 let register2 = document.querySelector(".register_b"); 
-let logout2 = document.querySelector(".logout a");  
+let logout2 = document.querySelector(".logout");  
 
 logout2.addEventListener("click", function(event) {
     event.preventDefault();

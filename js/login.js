@@ -12,6 +12,6 @@ formLogin.addEventListener("submit", function(evento){
         alert("La contraseña debe tener al menos 6 caracteres")
     }else{
         localStorage.setItem("emailUsuario", emailLogin.value);
-        window.location = "./index.html";
+        this.submit()
     }
 })

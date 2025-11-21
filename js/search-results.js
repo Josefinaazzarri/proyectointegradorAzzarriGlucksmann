@@ -20,7 +20,7 @@ let queryStringSearch = location.search
 let queryStringObjSearch = new URLSearchParams (queryStringSearch);
 let busqueda = queryStringObjSearch.get("buscador");
 
-let cosa_buscada = document.querySelector (".header2");
+let cosa_buscada = document.querySelector (".titulosearch");
 let informacion_cosa = document.querySelector (".cajaarti");
 
 let urlSearch= `https://dummyjson.com/products/search?q=${busqueda}`
@@ -32,10 +32,10 @@ fetch(urlSearch)
         console.log(data);
         
         if (data.total == 0) {
-            informacion_cosa.innerHTML = `<p>No hay resultados para el término: ${busqueda}</p>`
+            informacion_cosa.innerHTML = `<h3 class="header2">No hay resultados para el término: ${busqueda}<h3>`
         } else {
             let informacion = ""
-            cosa_buscada.innerText = `Resultados de búsqueda: ${busqueda}`
+            cosa_buscada.innerHTML = `<h3 class="header2">Resultados de búsqueda: ${busqueda}<h3>`
             for (let i = 0; i < data.products.length; i++) {
                 let info = data.products[i]
 
