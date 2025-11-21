@@ -1,18 +1,17 @@
-let logoutlink = document.querySelector("");
-let loginlink = document.querySelector("");
-let registerlink = document.querySelector(".register_b");
+let saludo2 = document.querySelector(".saludo");          
+let login2 = document.querySelector(".login_b");    
+let register2 = document.querySelector(".register_b"); 
+let logout2 = document.querySelector(".logout a");  
 
-if (logoutlink) {
-    logoutlink.addEventListener("click", function () {
+logout2.addEventListener("click", function(event) {
+    event.preventDefault();
+    localStorage.removeItem("emailUsuario");
+    saludo2.textContent = "";
+    saludo2.style.display="none";
 
+    logout2.style.display="none";
+    login2.style.display="inline";
+    register2.style.display="inline";
 
-        localStorage.removeItem("usuario");
-
-        logoutlink.style.display = "none";
-
-        loginlink.style.display = "inline-block";
-        registerlink.style.display = "inline-block";
-
-        location.href = "./login.html";
-    });
-}
+    window.location = "./login.html";
+});

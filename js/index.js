@@ -17,7 +17,7 @@ fetch(url)
                <a href="./product.html?id=${productos[i].id}"> <img src= ${productos[i].thumbnail} alt=" aleatoriofotouno"></a>
                 <h4>${productos[i].title}</h4>
                 <p>${productos[i].description}</p>
-                <p>$${productos[i].price}</p>
+                <p>${productos[i].price}</p>
                 <a href="./product.html?id=${productos[i].id}" class="but">VER DETALLE</a>
             </article>`
         }

@@ -15,4 +15,3 @@ formLogin.addEventListener("submit", function(evento){
         window.location = "./index.html";
     }
 })
-P
